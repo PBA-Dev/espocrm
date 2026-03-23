@@ -1,0 +1,24 @@
+[
+    {
+        "name": "status"
+    },
+    {
+        "name": "firstName"
+    },
+    {
+        "name": "lastName"
+    },
+    {
+        "name": "emailAddress",
+        "link": true
+    },
+    {
+        "name": "serviceCategory"
+    },
+    {
+        "name": "serviceType"
+    },
+    {
+        "name": "requestedStart"
+    }
+]

@@ -1,0 +1,167 @@
+{
+    "fields": {
+        "name": {
+            "type": "varchar",
+            "maxLength": 100,
+            "readOnly": true
+        },
+        "status": {
+            "type": "enum",
+            "required": true,
+            "default": "New",
+            "options": [
+                "New",
+                "Paused",
+                "InReview",
+                "Booked",
+                "Rejected",
+                "Error"
+            ],
+            "style": {
+                "Paused": "warning",
+                "Booked": "success",
+                "Rejected": "info",
+                "Error": "danger"
+            },
+            "displayAsLabel": true,
+            "labelType": "state"
+        },
+        "meetingScheduler": {
+            "type": "link",
+            "required": true
+        },
+        "serviceCategory": {
+            "type": "link",
+            "required": true
+        },
+        "serviceType": {
+            "type": "link",
+            "required": true
+        },
+        "firstName": {
+            "type": "varchar",
+            "required": true,
+            "pattern": "$personName"
+        },
+        "lastName": {
+            "type": "varchar",
+            "required": true,
+            "pattern": "$personName"
+        },
+        "emailAddress": {
+            "type": "email",
+            "required": true
+        },
+        "postalCode": {
+            "type": "varchar",
+            "required": true,
+            "maxLength": 30
+        },
+        "phoneNumber": {
+            "type": "phone"
+        },
+        "notes": {
+            "type": "text"
+        },
+        "requestedStart": {
+            "type": "datetime",
+            "required": true
+        },
+        "requestedEnd": {
+            "type": "datetime",
+            "required": true
+        },
+        "timezone": {
+            "type": "varchar",
+            "maxLength": 100
+        },
+        "generalConsentAccepted": {
+            "type": "bool",
+            "required": true,
+            "default": false
+        },
+        "overlapOverrideAccepted": {
+            "type": "bool",
+            "default": false
+        },
+        "requiresConfirmation": {
+            "type": "bool",
+            "default": false
+        },
+        "matchResult": {
+            "type": "enum",
+            "options": [
+                "MatchedContact",
+                "MatchedLead",
+                "CreatedLead",
+                "NoMatchProcessed"
+            ],
+            "readOnly": true
+        },
+        "conflictSummary": {
+            "type": "text",
+            "readOnly": true
+        },
+        "createdAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "modifiedAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "createdBy": {
+            "type": "link",
+            "readOnly": true
+        },
+        "modifiedBy": {
+            "type": "link",
+            "readOnly": true
+        }
+    },
+    "links": {
+        "meetingScheduler": {
+            "type": "belongsTo",
+            "entity": "OpMeetingScheduler"
+        },
+        "serviceCategory": {
+            "type": "belongsTo",
+            "entity": "OpServiceCategory"
+        },
+        "serviceType": {
+            "type": "belongsTo",
+            "entity": "OpServiceType"
+        },
+        "matchedLead": {
+            "type": "belongsTo",
+            "entity": "Lead"
+        },
+        "matchedContact": {
+            "type": "belongsTo",
+            "entity": "Contact"
+        },
+        "createdMeeting": {
+            "type": "belongsTo",
+            "entity": "Meeting"
+        },
+        "createdBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "modifiedBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        }
+    },
+    "collection": {
+        "orderBy": "createdAt",
+        "order": "desc",
+        "textFilterFields": [
+            "firstName",
+            "lastName",
+            "emailAddress",
+            "postalCode"
+        ]
+    },
+    "note": "Phase 1 can pause valid bookings for confirmation when overlap or processing uncertainty exists."
+}

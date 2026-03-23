@@ -57,5 +57,12 @@ This spec applies to the public client-facing booking form.
 - profession-specific required fields
 - profession-specific consent variants
 - agent-side advanced intake form
+- any customer-facing self-service area beyond the public booking form
 - deeper field branching by service type
 - HIPAA-specific handling if a profession or workflow requires it
+
+## Confirmation Boundary
+
+- Public users submit booking requests through the public booking form only.
+- If a request enters a paused confirmation state, confirmation is staff-only inside the CRM.
+- Customers should not receive CRM access as part of the Phase 1 booking flow.

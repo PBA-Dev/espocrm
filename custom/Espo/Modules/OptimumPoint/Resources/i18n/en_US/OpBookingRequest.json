@@ -1,0 +1,52 @@
+{
+    "labels": {
+        "Create OpBookingRequest": "Create Booking Request"
+    },
+    "fields": {
+        "name": "Reference",
+        "status": "Status",
+        "meetingScheduler": "Scheduler",
+        "serviceCategory": "Profession",
+        "serviceType": "Service Type",
+        "firstName": "First Name",
+        "lastName": "Last Name",
+        "emailAddress": "Email",
+        "postalCode": "Postal Code",
+        "phoneNumber": "Phone",
+        "notes": "Notes",
+        "requestedStart": "Requested Start",
+        "requestedEnd": "Requested End",
+        "timezone": "Timezone",
+        "generalConsentAccepted": "General Consent Accepted",
+        "overlapOverrideAccepted": "Overlap Override Accepted",
+        "requiresConfirmation": "Requires Confirmation",
+        "matchResult": "Match Result",
+        "matchedLead": "Matched Lead",
+        "matchedContact": "Matched Contact",
+        "createdMeeting": "Created Meeting",
+        "conflictSummary": "Conflict Summary",
+        "createdAt": "Created",
+        "modifiedAt": "Modified"
+    },
+    "options": {
+        "status": {
+            "New": "New",
+            "Paused": "Paused",
+            "InReview": "In Review",
+            "Booked": "Booked",
+            "Rejected": "Rejected",
+            "Error": "Error"
+        },
+        "matchResult": {
+            "MatchedContact": "Matched Contact",
+            "MatchedLead": "Matched Lead",
+            "CreatedLead": "Created Lead",
+            "NoMatchProcessed": "No Match Processed"
+        }
+    },
+    "tooltips": {
+        "overlapOverrideAccepted": "Checked only when the user explicitly confirms that a booking may overlap a busy event after seeing the conflict warning.",
+        "generalConsentAccepted": "Required Phase 1 public-booking consent acknowledgement.",
+        "requiresConfirmation": "Used when the booking should pause for staff confirmation before it becomes a finalized appointment."
+    }
+}

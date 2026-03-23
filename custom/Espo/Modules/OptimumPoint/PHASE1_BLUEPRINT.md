@@ -42,6 +42,7 @@
    - availability rules
    - weekly hours and exceptions are scheduler-specific
    - booking workflow
+   - booking requests are stored as first-class records for intake, review, and troubleshooting
    - provider calendar write-back
    - user-owned and team-owned schedulers
    - optional round-robin assignment, off by default
@@ -58,6 +59,8 @@
    - required public form fields are first name, last name, email, postal code, profession, service type, and one general consent checkbox
    - phone stays optional in the base public form
    - profession-specific extra fields are deferred to a later slice
+   - valid bookings can auto-create, but overlap or processing uncertainty should place the request in a paused confirmation state
+   - paused confirmations are staff-only inside CRM, not customer-facing
 
 ## Current Constraint
 

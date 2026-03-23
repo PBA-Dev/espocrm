@@ -1,0 +1,97 @@
+[
+    {
+        "label": "",
+        "rows": [
+            [
+                {
+                    "name": "status"
+                },
+                {
+                    "name": "meetingScheduler"
+                }
+            ],
+            [
+                {
+                    "name": "serviceCategory"
+                },
+                {
+                    "name": "serviceType"
+                }
+            ],
+            [
+                {
+                    "name": "firstName"
+                },
+                {
+                    "name": "lastName"
+                }
+            ],
+            [
+                {
+                    "name": "emailAddress"
+                },
+                {
+                    "name": "postalCode"
+                }
+            ],
+            [
+                {
+                    "name": "phoneNumber"
+                },
+                {
+                    "name": "timezone"
+                }
+            ],
+            [
+                {
+                    "name": "requestedStart"
+                },
+                {
+                    "name": "requestedEnd"
+                }
+            ],
+            [
+                {
+                    "name": "generalConsentAccepted"
+                },
+                {
+                    "name": "overlapOverrideAccepted"
+                }
+            ],
+            [
+                {
+                    "name": "requiresConfirmation"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "matchResult"
+                },
+                {
+                    "name": "createdMeeting"
+                }
+            ],
+            [
+                {
+                    "name": "matchedContact"
+                },
+                {
+                    "name": "matchedLead"
+                }
+            ],
+            [
+                {
+                    "name": "conflictSummary",
+                    "fullWidth": true
+                }
+            ],
+            [
+                {
+                    "name": "notes",
+                    "fullWidth": true
+                }
+            ]
+        ]
+    }
+]
