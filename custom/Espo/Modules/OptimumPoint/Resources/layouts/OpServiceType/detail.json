@@ -1,0 +1,29 @@
+[
+    {
+        "label": "",
+        "rows": [
+            [
+                {
+                    "name": "name"
+                },
+                {
+                    "name": "serviceCategory"
+                }
+            ],
+            [
+                {
+                    "name": "isActive"
+                },
+                {
+                    "name": "sortOrder"
+                }
+            ],
+            [
+                {
+                    "name": "description",
+                    "fullWidth": true
+                }
+            ]
+        ]
+    }
+]

@@ -1,0 +1,11 @@
+{
+    "labels": {
+        "Create OpServiceCategory": "Create Service Category"
+    },
+    "fields": {
+        "name": "Profession",
+        "isActive": "Active",
+        "sortOrder": "Sort Order",
+        "description": "Description"
+    }
+}

@@ -52,6 +52,12 @@
    - public booking auto-detects browser timezone and allows manual override
    - busy conflicts show the overlapping event and require explicit override approval
    - free or tentative provider events may be ignored when that status is exposed clearly
+   - public booking form stays minimal for Phase 1
+   - public booking includes a profession dropdown and a dependent service-type dropdown
+   - profession and service type options are managed centrally by CRM users
+   - required public form fields are first name, last name, email, postal code, profession, service type, and one general consent checkbox
+   - phone stays optional in the base public form
+   - profession-specific extra fields are deferred to a later slice
 
 ## Current Constraint
 

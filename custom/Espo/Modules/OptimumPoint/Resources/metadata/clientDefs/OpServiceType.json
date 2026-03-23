@@ -1,0 +1,5 @@
+{
+    "controller": "controllers/record",
+    "iconClass": "fas fa-list-check",
+    "color": "#1FCBE3"
+}

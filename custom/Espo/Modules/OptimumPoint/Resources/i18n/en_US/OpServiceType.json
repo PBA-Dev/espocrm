@@ -1,0 +1,12 @@
+{
+    "labels": {
+        "Create OpServiceType": "Create Service Type"
+    },
+    "fields": {
+        "name": "Service Type",
+        "serviceCategory": "Profession",
+        "isActive": "Active",
+        "sortOrder": "Sort Order",
+        "description": "Description"
+    }
+}
