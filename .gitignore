@@ -25,6 +25,8 @@
 /custom/Espo/Modules/*
 !/custom/Espo/Custom/.htaccess
 !/custom/Espo/Modules/.htaccess
+!/custom/Espo/Modules/OptimumPoint/
+!/custom/Espo/Modules/OptimumPoint/**
 /install/config.php
 
 client/css/espo/*

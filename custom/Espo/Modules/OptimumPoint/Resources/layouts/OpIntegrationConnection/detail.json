@@ -1,0 +1,61 @@
+[
+    {
+        "label": "",
+        "rows": [
+            [
+                {
+                    "name": "name"
+                },
+                {
+                    "name": "provider"
+                }
+            ],
+            [
+                {
+                    "name": "ownerType"
+                },
+                {
+                    "name": "status"
+                }
+            ],
+            [
+                {
+                    "name": "user"
+                },
+                {
+                    "name": "team"
+                }
+            ],
+            [
+                {
+                    "name": "emailAddress"
+                },
+                {
+                    "name": "remoteAccountId"
+                }
+            ],
+            [
+                {
+                    "name": "calendarSyncEnabled"
+                },
+                {
+                    "name": "contactImportEnabled"
+                }
+            ],
+            [
+                {
+                    "name": "contactExportEnabled"
+                },
+                {
+                    "name": "lastSyncAt"
+                }
+            ],
+            [
+                {
+                    "name": "lastError",
+                    "fullWidth": true
+                }
+            ]
+        ]
+    }
+]

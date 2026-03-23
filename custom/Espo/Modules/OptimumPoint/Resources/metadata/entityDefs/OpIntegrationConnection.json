@@ -1,0 +1,136 @@
+{
+    "fields": {
+        "name": {
+            "type": "varchar",
+            "required": true,
+            "pattern": "$noBadCharacters"
+        },
+        "provider": {
+            "type": "enum",
+            "required": true,
+            "options": [
+                "Google",
+                "Outlook"
+            ],
+            "displayAsLabel": true,
+            "isSorted": true
+        },
+        "ownerType": {
+            "type": "enum",
+            "required": true,
+            "default": "User",
+            "options": [
+                "User",
+                "Team"
+            ],
+            "displayAsLabel": true
+        },
+        "user": {
+            "type": "link"
+        },
+        "team": {
+            "type": "link"
+        },
+        "emailAddress": {
+            "type": "email"
+        },
+        "status": {
+            "type": "enum",
+            "required": true,
+            "default": "Draft",
+            "options": [
+                "Draft",
+                "Active",
+                "Error",
+                "Disabled"
+            ],
+            "style": {
+                "Active": "success",
+                "Error": "danger",
+                "Disabled": "info"
+            },
+            "displayAsLabel": true,
+            "labelType": "state"
+        },
+        "calendarSyncEnabled": {
+            "type": "bool",
+            "default": true
+        },
+        "contactImportEnabled": {
+            "type": "bool",
+            "default": true
+        },
+        "contactExportEnabled": {
+            "type": "bool",
+            "default": true
+        },
+        "lastSyncAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "lastError": {
+            "type": "text",
+            "readOnly": true
+        },
+        "remoteAccountId": {
+            "type": "varchar",
+            "maxLength": 255,
+            "readOnly": true
+        },
+        "createdAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "modifiedAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "createdBy": {
+            "type": "link",
+            "readOnly": true
+        },
+        "modifiedBy": {
+            "type": "link",
+            "readOnly": true
+        }
+    },
+    "links": {
+        "user": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "team": {
+            "type": "belongsTo",
+            "entity": "Team"
+        },
+        "createdBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "modifiedBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        }
+    },
+    "collection": {
+        "orderBy": "modifiedAt",
+        "order": "desc",
+        "textFilterFields": [
+            "name",
+            "emailAddress"
+        ]
+    },
+    "indexes": {
+        "providerStatus": {
+            "columns": [
+                "provider",
+                "status"
+            ]
+        },
+        "ownerType": {
+            "columns": [
+                "ownerType"
+            ]
+        }
+    }
+}

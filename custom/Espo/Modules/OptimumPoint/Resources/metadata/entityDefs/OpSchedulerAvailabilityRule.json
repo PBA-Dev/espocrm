@@ -1,0 +1,65 @@
+{
+    "fields": {
+        "name": {
+            "type": "varchar",
+            "required": true,
+            "pattern": "$noBadCharacters"
+        },
+        "scheduler": {
+            "type": "link",
+            "required": true
+        },
+        "dayOfWeek": {
+            "type": "enumInt",
+            "required": true,
+            "options": [1, 2, 3, 4, 5, 6, 7],
+            "default": 1
+        },
+        "startTime": {
+            "type": "time",
+            "required": true
+        },
+        "endTime": {
+            "type": "time",
+            "required": true
+        },
+        "isActive": {
+            "type": "bool",
+            "default": true
+        },
+        "createdAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "modifiedAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "createdBy": {
+            "type": "link",
+            "readOnly": true
+        },
+        "modifiedBy": {
+            "type": "link",
+            "readOnly": true
+        }
+    },
+    "links": {
+        "scheduler": {
+            "type": "belongsTo",
+            "entity": "OpMeetingScheduler"
+        },
+        "createdBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "modifiedBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        }
+    },
+    "collection": {
+        "orderBy": "dayOfWeek",
+        "order": "asc"
+    }
+}

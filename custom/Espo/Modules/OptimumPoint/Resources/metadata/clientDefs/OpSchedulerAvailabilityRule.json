@@ -1,0 +1,5 @@
+{
+    "controller": "controllers/record",
+    "iconClass": "far fa-clock",
+    "color": "#0E6BA8"
+}

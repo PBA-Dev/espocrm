@@ -1,0 +1,83 @@
+[
+    {
+        "label": "",
+        "rows": [
+            [
+                {
+                    "name": "name"
+                },
+                {
+                    "name": "status"
+                }
+            ],
+            [
+                {
+                    "name": "ownerType"
+                },
+                {
+                    "name": "publicAccessEnabled"
+                }
+            ],
+            [
+                {
+                    "name": "user"
+                },
+                {
+                    "name": "team"
+                }
+            ],
+            [
+                {
+                    "name": "defaultDuration"
+                },
+                {
+                    "name": "bookingLinkSlug"
+                }
+            ],
+            [
+                {
+                    "name": "bufferBefore"
+                },
+                {
+                    "name": "bufferAfter"
+                }
+            ],
+            [
+                {
+                    "name": "roundRobinEnabled"
+                },
+                {
+                    "name": "allowParticipantChoice"
+                }
+            ],
+            [
+                {
+                    "name": "bookingMatchMode"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "timezoneMode"
+                },
+                {
+                    "name": "overlapPolicy"
+                }
+            ],
+            [
+                {
+                    "name": "defaultCalendarMode"
+                },
+                {
+                    "name": "defaultIntegrationConnection"
+                }
+            ],
+            [
+                {
+                    "name": "description",
+                    "fullWidth": true
+                }
+            ]
+        ]
+    }
+]

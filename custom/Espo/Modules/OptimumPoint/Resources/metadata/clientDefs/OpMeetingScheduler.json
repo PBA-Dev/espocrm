@@ -1,0 +1,14 @@
+{
+    "controller": "controllers/record",
+    "iconClass": "fas fa-calendar-alt",
+    "color": "#1FCBE3",
+    "filterList": [
+        {
+            "name": "active",
+            "style": "success"
+        },
+        {
+            "name": "draft"
+        }
+    ]
+}

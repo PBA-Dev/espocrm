@@ -1,0 +1,59 @@
+{
+    "labels": {
+        "Create OpMeetingScheduler": "Create Meeting Scheduler"
+    },
+    "fields": {
+        "name": "Name",
+        "status": "Status",
+        "ownerType": "Ownership Scope",
+        "user": "User",
+        "team": "Team",
+        "defaultDuration": "Default Duration",
+        "bufferBefore": "Buffer Before",
+        "bufferAfter": "Buffer After",
+        "roundRobinEnabled": "Enable Round Robin",
+        "allowParticipantChoice": "Allow Customer To Choose Team Member",
+        "bookingMatchMode": "Booking Match Mode",
+        "timezoneMode": "Timezone Handling",
+        "overlapPolicy": "Overlap Policy",
+        "defaultCalendarMode": "Default Calendar Mode",
+        "defaultIntegrationConnection": "Default Connected Calendar",
+        "publicAccessEnabled": "Public Booking Enabled",
+        "bookingLinkSlug": "Booking Link Slug",
+        "description": "Description",
+        "createdAt": "Created",
+        "modifiedAt": "Modified"
+    },
+    "options": {
+        "status": {
+            "Draft": "Draft",
+            "Active": "Active",
+            "Disabled": "Disabled"
+        },
+        "ownerType": {
+            "User": "User",
+            "Team": "Team"
+        },
+        "bookingMatchMode": {
+            "MatchOrCreateLead": "Match by Email, Else Create Lead"
+        },
+        "timezoneMode": {
+            "BrowserWithManualOverride": "Auto-Detect Browser Timezone With Manual Override"
+        },
+        "overlapPolicy": {
+            "WarnAndRequireOverride": "Warn And Require Explicit Override"
+        },
+        "defaultCalendarMode": {
+            "Plain": "Plain Calendar Event",
+            "ConnectedProvider": "Use Connected Provider"
+        }
+    },
+    "tooltips": {
+        "roundRobinEnabled": "When enabled for team-owned schedulers, meetings can be assigned automatically to the next available team member.",
+        "allowParticipantChoice": "When enabled for team-owned schedulers, customers can select a specific team member. Off by default.",
+        "bookingMatchMode": "Match by email first. If there is no CRM match, create a new Lead.",
+        "timezoneMode": "Public booking should detect the visitor timezone automatically and still allow a manual override.",
+        "overlapPolicy": "Busy conflicts should show the conflicting event and require explicit confirmation before an overlap is allowed. Free or tentative events may be ignored where provider data supports it.",
+        "defaultCalendarMode": "Starts as a plain calendar event. A connected Google or Outlook calendar can later be promoted to the default."
+    }
+}

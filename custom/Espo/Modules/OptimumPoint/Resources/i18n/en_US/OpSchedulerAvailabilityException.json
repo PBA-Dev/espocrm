@@ -1,0 +1,18 @@
+{
+    "labels": {
+        "Create OpSchedulerAvailabilityException": "Create Availability Exception"
+    },
+    "fields": {
+        "name": "Name",
+        "scheduler": "Scheduler",
+        "dateStart": "Start",
+        "dateEnd": "End",
+        "isAvailable": "Available During Exception",
+        "description": "Description",
+        "createdAt": "Created",
+        "modifiedAt": "Modified"
+    },
+    "tooltips": {
+        "isAvailable": "Use this to open special extra availability. Leave off to block time that would normally be bookable."
+    }
+}

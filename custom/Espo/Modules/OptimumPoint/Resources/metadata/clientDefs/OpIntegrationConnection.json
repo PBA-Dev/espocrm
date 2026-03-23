@@ -1,0 +1,18 @@
+{
+    "controller": "controllers/record",
+    "iconClass": "fas fa-plug",
+    "color": "#0E6BA8",
+    "filterList": [
+        {
+            "name": "active",
+            "style": "success"
+        },
+        {
+            "name": "draft"
+        },
+        {
+            "name": "error",
+            "style": "danger"
+        }
+    ]
+}

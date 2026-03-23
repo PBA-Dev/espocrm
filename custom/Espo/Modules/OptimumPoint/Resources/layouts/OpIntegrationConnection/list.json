@@ -1,0 +1,24 @@
+[
+    {
+        "name": "name",
+        "link": true
+    },
+    {
+        "name": "provider"
+    },
+    {
+        "name": "ownerType"
+    },
+    {
+        "name": "user"
+    },
+    {
+        "name": "team"
+    },
+    {
+        "name": "status"
+    },
+    {
+        "name": "lastSyncAt"
+    }
+]

@@ -1,0 +1,26 @@
+{
+    "labels": {
+        "Create OpSchedulerAvailabilityRule": "Create Availability Rule"
+    },
+    "fields": {
+        "name": "Name",
+        "scheduler": "Scheduler",
+        "dayOfWeek": "Day of Week",
+        "startTime": "Start Time",
+        "endTime": "End Time",
+        "isActive": "Active",
+        "createdAt": "Created",
+        "modifiedAt": "Modified"
+    },
+    "options": {
+        "dayOfWeek": {
+            "1": "Monday",
+            "2": "Tuesday",
+            "3": "Wednesday",
+            "4": "Thursday",
+            "5": "Friday",
+            "6": "Saturday",
+            "7": "Sunday"
+        }
+    }
+}

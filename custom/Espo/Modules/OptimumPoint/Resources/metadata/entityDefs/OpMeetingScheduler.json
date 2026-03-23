@@ -1,0 +1,168 @@
+{
+    "fields": {
+        "name": {
+            "type": "varchar",
+            "required": true,
+            "pattern": "$noBadCharacters"
+        },
+        "status": {
+            "type": "enum",
+            "required": true,
+            "default": "Draft",
+            "options": [
+                "Draft",
+                "Active",
+                "Disabled"
+            ],
+            "style": {
+                "Active": "success",
+                "Disabled": "info"
+            },
+            "displayAsLabel": true,
+            "labelType": "state"
+        },
+        "ownerType": {
+            "type": "enum",
+            "required": true,
+            "default": "User",
+            "options": [
+                "User",
+                "Team"
+            ],
+            "displayAsLabel": true
+        },
+        "user": {
+            "type": "link"
+        },
+        "team": {
+            "type": "link"
+        },
+        "defaultDuration": {
+            "type": "duration",
+            "options": [900, 1800, 3600, 5400, 7200],
+            "default": 3600
+        },
+        "bufferBefore": {
+            "type": "enumInt",
+            "options": [0, 5, 10, 15, 30, 60],
+            "default": 0
+        },
+        "bufferAfter": {
+            "type": "enumInt",
+            "options": [0, 5, 10, 15, 30, 60],
+            "default": 0
+        },
+        "roundRobinEnabled": {
+            "type": "bool",
+            "default": false
+        },
+        "allowParticipantChoice": {
+            "type": "bool",
+            "default": false
+        },
+        "bookingMatchMode": {
+            "type": "enum",
+            "required": true,
+            "default": "MatchOrCreateLead",
+            "options": [
+                "MatchOrCreateLead"
+            ]
+        },
+        "timezoneMode": {
+            "type": "enum",
+            "required": true,
+            "default": "BrowserWithManualOverride",
+            "options": [
+                "BrowserWithManualOverride"
+            ]
+        },
+        "overlapPolicy": {
+            "type": "enum",
+            "required": true,
+            "default": "WarnAndRequireOverride",
+            "options": [
+                "WarnAndRequireOverride"
+            ]
+        },
+        "defaultCalendarMode": {
+            "type": "enum",
+            "required": true,
+            "default": "Plain",
+            "options": [
+                "Plain",
+                "ConnectedProvider"
+            ]
+        },
+        "defaultIntegrationConnection": {
+            "type": "link"
+        },
+        "publicAccessEnabled": {
+            "type": "bool",
+            "default": true
+        },
+        "bookingLinkSlug": {
+            "type": "varchar",
+            "maxLength": 100
+        },
+        "description": {
+            "type": "text"
+        },
+        "createdAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "modifiedAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "createdBy": {
+            "type": "link",
+            "readOnly": true
+        },
+        "modifiedBy": {
+            "type": "link",
+            "readOnly": true
+        }
+    },
+    "links": {
+        "user": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "team": {
+            "type": "belongsTo",
+            "entity": "Team"
+        },
+        "defaultIntegrationConnection": {
+            "type": "belongsTo",
+            "entity": "OpIntegrationConnection"
+        },
+        "availabilityRules": {
+            "type": "hasMany",
+            "entity": "OpSchedulerAvailabilityRule",
+            "foreign": "scheduler"
+        },
+        "availabilityExceptions": {
+            "type": "hasMany",
+            "entity": "OpSchedulerAvailabilityException",
+            "foreign": "scheduler"
+        },
+        "createdBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "modifiedBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        }
+    },
+        "collection": {
+            "orderBy": "modifiedAt",
+            "order": "desc",
+        "textFilterFields": [
+            "name",
+            "bookingLinkSlug"
+        ]
+    },
+    "note": "Phase 1 overlap behavior is warning-based with explicit user confirmation for busy conflicts."
+}

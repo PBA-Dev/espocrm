@@ -1,0 +1,47 @@
+{
+    "labels": {
+        "Create OpIntegrationConnection": "Create Integration Connection",
+        "userScope": "User-Owned",
+        "teamScope": "Team-Owned"
+    },
+    "fields": {
+        "name": "Name",
+        "provider": "Provider",
+        "ownerType": "Ownership Scope",
+        "user": "User",
+        "team": "Team",
+        "emailAddress": "Connection Email",
+        "status": "Status",
+        "calendarSyncEnabled": "Calendar Sync Enabled",
+        "contactImportEnabled": "Import Contacts to CRM",
+        "contactExportEnabled": "Export CRM Contacts",
+        "lastSyncAt": "Last Sync",
+        "lastError": "Last Error",
+        "remoteAccountId": "Remote Account ID",
+        "createdAt": "Created",
+        "modifiedAt": "Modified",
+        "createdBy": "Created By",
+        "modifiedBy": "Modified By"
+    },
+    "options": {
+        "provider": {
+            "Google": "Google",
+            "Outlook": "Outlook"
+        },
+        "ownerType": {
+            "User": "User",
+            "Team": "Team"
+        },
+        "status": {
+            "Draft": "Draft",
+            "Active": "Active",
+            "Error": "Error",
+            "Disabled": "Disabled"
+        }
+    },
+    "tooltips": {
+        "ownerType": "User-owned connections are personal. Team-owned connections are shared for team scheduling and shared sync workflows.",
+        "contactExportEnabled": "When enabled, CRM contacts can be pushed to the connected provider account.",
+        "contactImportEnabled": "When enabled, provider contacts can be imported into the CRM."
+    }
+}

@@ -1,0 +1,62 @@
+{
+    "fields": {
+        "name": {
+            "type": "varchar",
+            "required": true,
+            "pattern": "$noBadCharacters"
+        },
+        "scheduler": {
+            "type": "link",
+            "required": true
+        },
+        "dateStart": {
+            "type": "datetime",
+            "required": true
+        },
+        "dateEnd": {
+            "type": "datetime",
+            "required": true
+        },
+        "isAvailable": {
+            "type": "bool",
+            "default": false
+        },
+        "description": {
+            "type": "text"
+        },
+        "createdAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "modifiedAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "createdBy": {
+            "type": "link",
+            "readOnly": true
+        },
+        "modifiedBy": {
+            "type": "link",
+            "readOnly": true
+        }
+    },
+    "links": {
+        "scheduler": {
+            "type": "belongsTo",
+            "entity": "OpMeetingScheduler"
+        },
+        "createdBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "modifiedBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        }
+    },
+    "collection": {
+        "orderBy": "dateStart",
+        "order": "asc"
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "entity": true,
+    "layouts": true,
+    "tab": false,
+    "acl": true,
+    "aclPortal": false,
+    "module": "OptimumPoint",
+    "customizable": false,
+    "importable": false,
+    "exportable": false,
+    "stream": false,
+    "object": true
+}

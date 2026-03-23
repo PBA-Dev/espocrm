@@ -1,0 +1,22 @@
+{
+    "parent": "Light",
+    "logo": "client/img/op_logo.png",
+    "stylesheet": "client/css/espo/light.css",
+    "stylesheetIframe": "client/css/espo/espo-iframe.css",
+    "params": {
+        "navbar": {
+            "type": "enum",
+            "default": "side",
+            "options": [
+                "side",
+                "top"
+            ]
+        }
+    },
+    "colorAccent": "#0E6BA8",
+    "colorAccentSoft": "#1FCBE3",
+    "calendarColors": {
+        "": "#0e6ba880",
+        "bg": "#c8f3f8"
+    }
+}

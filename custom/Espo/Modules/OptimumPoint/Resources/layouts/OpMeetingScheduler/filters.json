@@ -1,0 +1,20 @@
+[
+    {
+        "name": "name"
+    },
+    {
+        "name": "ownerType"
+    },
+    {
+        "name": "user"
+    },
+    {
+        "name": "team"
+    },
+    {
+        "name": "status"
+    },
+    {
+        "name": "defaultCalendarMode"
+    }
+]

@@ -1,0 +1,21 @@
+[
+    {
+        "name": "name",
+        "link": true
+    },
+    {
+        "name": "scheduler"
+    },
+    {
+        "name": "dayOfWeek"
+    },
+    {
+        "name": "startTime"
+    },
+    {
+        "name": "endTime"
+    },
+    {
+        "name": "isActive"
+    }
+]

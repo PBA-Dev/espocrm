@@ -1,0 +1,35 @@
+[
+    {
+        "label": "",
+        "rows": [
+            [
+                {
+                    "name": "name"
+                },
+                {
+                    "name": "scheduler"
+                }
+            ],
+            [
+                {
+                    "name": "dateStart"
+                },
+                {
+                    "name": "dateEnd"
+                }
+            ],
+            [
+                {
+                    "name": "isAvailable"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "description",
+                    "fullWidth": true
+                }
+            ]
+        ]
+    }
+]
