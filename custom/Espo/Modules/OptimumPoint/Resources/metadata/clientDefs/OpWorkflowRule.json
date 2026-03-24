@@ -1,0 +1,5 @@
+{
+    "controller": "controllers/record",
+    "iconClass": "fas fa-diagram-project",
+    "color": "#0E6BA8"
+}

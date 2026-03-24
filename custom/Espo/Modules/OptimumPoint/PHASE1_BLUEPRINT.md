@@ -31,7 +31,8 @@
    - trigger definitions
    - condition model
    - action model
-   - webhook action for n8n
+   - outbound webhook subscriptions for OptimumPoint events
+   - booking request creation triggers workflow and webhook evaluation
 
 4. Reports foundation
    - saved report definition
@@ -43,6 +44,8 @@
    - weekly hours and exceptions are scheduler-specific
    - booking workflow
    - booking requests are stored as first-class records for intake, review, and troubleshooting
+   - public route can accept booking submissions and create paused booking requests
+   - public route can return the service catalog for profession/service dropdowns
    - provider calendar write-back
    - user-owned and team-owned schedulers
    - optional round-robin assignment, off by default

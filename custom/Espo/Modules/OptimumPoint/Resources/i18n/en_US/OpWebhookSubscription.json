@@ -1,0 +1,22 @@
+{
+    "labels": {
+        "Create OpWebhookSubscription": "Create Webhook Subscription"
+    },
+    "fields": {
+        "name": "Name",
+        "isActive": "Active",
+        "eventName": "Event Name",
+        "targetUrl": "Target URL",
+        "secretKey": "Secret Key",
+        "description": "Description",
+        "createdAt": "Created",
+        "modifiedAt": "Modified"
+    },
+    "options": {
+        "eventName": {
+            "OptimumPoint.BookingRequest.Created": "Booking Request Created",
+            "OptimumPoint.BookingRequest.Paused": "Booking Request Paused",
+            "OptimumPoint.BookingRequest.Booked": "Booking Request Booked"
+        }
+    }
+}

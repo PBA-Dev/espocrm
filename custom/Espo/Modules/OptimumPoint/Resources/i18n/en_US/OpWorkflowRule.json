@@ -1,0 +1,28 @@
+{
+    "labels": {
+        "Create OpWorkflowRule": "Create Workflow Rule"
+    },
+    "fields": {
+        "name": "Name",
+        "isActive": "Active",
+        "triggerEvent": "Trigger Event",
+        "targetEntityType": "Target Entity Type",
+        "actionType": "Action Type",
+        "assignedUser": "Assigned User",
+        "description": "Description",
+        "createdAt": "Created",
+        "modifiedAt": "Modified"
+    },
+    "options": {
+        "triggerEvent": {
+            "OptimumPoint.BookingRequest.Created": "Booking Request Created",
+            "OptimumPoint.BookingRequest.Paused": "Booking Request Paused",
+            "OptimumPoint.BookingRequest.Booked": "Booking Request Booked"
+        },
+        "actionType": {
+            "CreateTask": "Create Task",
+            "CreateNotification": "Create Notification",
+            "SendWebhook": "Send Webhook"
+        }
+    }
+}

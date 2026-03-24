@@ -1,0 +1,14 @@
+[
+    {
+        "route": "/OptimumPoint/BookingRequest",
+        "method": "post",
+        "actionClassName": "Espo\\Modules\\OptimumPoint\\Api\\PostPublicBookingRequest",
+        "noAuth": true
+    },
+    {
+        "route": "/OptimumPoint/ServiceCatalog",
+        "method": "get",
+        "actionClassName": "Espo\\Modules\\OptimumPoint\\Api\\GetServiceCatalog",
+        "noAuth": true
+    }
+]
