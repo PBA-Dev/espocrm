@@ -26,6 +26,9 @@
    - OAuth configuration flow
    - sync status tracking
    - webhook ingress and egress
+   - use Espo native `OAuthProvider` and `OAuthAccount` records as the authentication base for Google and Outlook
+   - keep OptimumPoint `OpIntegrationConnection` as the provider-agnostic orchestration layer
+   - provide OptimumPoint API actions to prepare OAuth, connect, disconnect, and refresh remote provider metadata for each connection
 
 3. Workflow foundation
    - trigger definitions

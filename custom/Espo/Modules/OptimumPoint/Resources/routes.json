@@ -15,5 +15,25 @@
         "route": "/OptimumPoint/Report/:id/run",
         "method": "post",
         "actionClassName": "Espo\\Modules\\OptimumPoint\\Api\\PostRunReport"
+    },
+    {
+        "route": "/OptimumPoint/IntegrationConnection/:id/prepare-oauth",
+        "method": "post",
+        "actionClassName": "Espo\\Modules\\OptimumPoint\\Api\\PostPrepareIntegrationConnectionOAuth"
+    },
+    {
+        "route": "/OptimumPoint/IntegrationConnection/:id/connect",
+        "method": "post",
+        "actionClassName": "Espo\\Modules\\OptimumPoint\\Api\\PostConnectIntegrationConnectionOAuth"
+    },
+    {
+        "route": "/OptimumPoint/IntegrationConnection/:id/connect",
+        "method": "delete",
+        "actionClassName": "Espo\\Modules\\OptimumPoint\\Api\\DeleteIntegrationConnectionOAuth"
+    },
+    {
+        "route": "/OptimumPoint/IntegrationConnection/:id/refresh",
+        "method": "post",
+        "actionClassName": "Espo\\Modules\\OptimumPoint\\Api\\PostRefreshIntegrationConnection"
     }
 ]

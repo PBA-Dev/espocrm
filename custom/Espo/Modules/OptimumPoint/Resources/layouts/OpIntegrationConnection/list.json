@@ -19,6 +19,12 @@
         "name": "status"
     },
     {
+        "name": "oauthProvider"
+    },
+    {
         "name": "lastSyncAt"
+    },
+    {
+        "name": "lastCalendarSyncAt"
     }
 ]

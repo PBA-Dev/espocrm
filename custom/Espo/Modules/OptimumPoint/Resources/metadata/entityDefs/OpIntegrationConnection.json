@@ -31,6 +31,13 @@
         "team": {
             "type": "link"
         },
+        "oauthProvider": {
+            "type": "link"
+        },
+        "oauthAccount": {
+            "type": "link",
+            "readOnly": true
+        },
         "emailAddress": {
             "type": "email"
         },
@@ -77,6 +84,32 @@
             "maxLength": 255,
             "readOnly": true
         },
+        "remoteCalendarId": {
+            "type": "varchar",
+            "maxLength": 255,
+            "readOnly": true
+        },
+        "remoteCalendarName": {
+            "type": "varchar",
+            "maxLength": 255,
+            "readOnly": true
+        },
+        "lastCalendarSyncAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "lastContactImportAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "lastContactExportAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "syncCursor": {
+            "type": "text",
+            "readOnly": true
+        },
         "createdAt": {
             "type": "datetime",
             "readOnly": true
@@ -103,6 +136,14 @@
             "type": "belongsTo",
             "entity": "Team"
         },
+        "oauthProvider": {
+            "type": "belongsTo",
+            "entity": "OAuthProvider"
+        },
+        "oauthAccount": {
+            "type": "belongsTo",
+            "entity": "OAuthAccount"
+        },
         "createdBy": {
             "type": "belongsTo",
             "entity": "User"
@@ -125,6 +166,16 @@
             "columns": [
                 "provider",
                 "status"
+            ]
+        },
+        "oauthProvider": {
+            "columns": [
+                "oauth_provider_id"
+            ]
+        },
+        "oauthAccount": {
+            "columns": [
+                "oauth_account_id"
             ]
         },
         "ownerType": {

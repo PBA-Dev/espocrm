@@ -31,7 +31,23 @@
                     "name": "emailAddress"
                 },
                 {
+                    "name": "oauthProvider"
+                }
+            ],
+            [
+                {
+                    "name": "oauthAccount"
+                },
+                {
                     "name": "remoteAccountId"
+                }
+            ],
+            [
+                {
+                    "name": "remoteCalendarName"
+                },
+                {
+                    "name": "remoteCalendarId"
                 }
             ],
             [
@@ -52,7 +68,26 @@
             ],
             [
                 {
+                    "name": "lastCalendarSyncAt"
+                },
+                {
+                    "name": "lastContactImportAt"
+                }
+            ],
+            [
+                {
+                    "name": "lastContactExportAt"
+                }
+            ],
+            [
+                {
                     "name": "lastError",
+                    "fullWidth": true
+                }
+            ],
+            [
+                {
+                    "name": "syncCursor",
                     "fullWidth": true
                 }
             ]

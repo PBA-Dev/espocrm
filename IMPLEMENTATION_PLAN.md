@@ -72,6 +72,8 @@ The extension should be structured into these internal areas:
    - Google provider
    - Outlook provider
    - n8n-oriented webhook/API helpers
+   - reuse Espo native OAuth provider/account records instead of duplicating token storage in the OptimumPoint module
+   - expose module-level connection lifecycle actions so scheduler and admin UIs can work with `OpIntegrationConnection` records directly
 
 6. Branding
    - theme metadata

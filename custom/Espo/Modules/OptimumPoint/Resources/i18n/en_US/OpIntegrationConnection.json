@@ -10,6 +10,8 @@
         "ownerType": "Ownership Scope",
         "user": "User",
         "team": "Team",
+        "oauthProvider": "OAuth Provider",
+        "oauthAccount": "OAuth Account",
         "emailAddress": "Connection Email",
         "status": "Status",
         "calendarSyncEnabled": "Calendar Sync Enabled",
@@ -18,6 +20,12 @@
         "lastSyncAt": "Last Sync",
         "lastError": "Last Error",
         "remoteAccountId": "Remote Account ID",
+        "remoteCalendarId": "Remote Calendar ID",
+        "remoteCalendarName": "Remote Calendar Name",
+        "lastCalendarSyncAt": "Last Calendar Sync",
+        "lastContactImportAt": "Last Contact Import",
+        "lastContactExportAt": "Last Contact Export",
+        "syncCursor": "Sync Cursor",
         "createdAt": "Created",
         "modifiedAt": "Modified",
         "createdBy": "Created By",
@@ -41,7 +49,11 @@
     },
     "tooltips": {
         "ownerType": "User-owned connections are personal. Team-owned connections are shared for team scheduling and shared sync workflows.",
+        "oauthProvider": "Select the OAuth provider record that holds the client credentials and redirect configuration for this connection.",
+        "oauthAccount": "Filled after the provider account completes OAuth authorization. The linked record stores the provider tokens.",
         "contactExportEnabled": "When enabled, CRM contacts can be pushed to the connected provider account.",
-        "contactImportEnabled": "When enabled, provider contacts can be imported into the CRM."
+        "contactImportEnabled": "When enabled, provider contacts can be imported into the CRM.",
+        "remoteCalendarName": "Primary provider calendar selected for scheduler write-back and free/busy checks.",
+        "syncCursor": "Provider-specific sync checkpoint for incremental calendar or contact synchronization."
     }
 }
