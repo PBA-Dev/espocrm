@@ -1,0 +1,42 @@
+{
+    "labels": {
+        "Create OpReport": "Create Report"
+    },
+    "fields": {
+        "name": "Name",
+        "isActive": "Active",
+        "targetEntityType": "Target Entity Type",
+        "reportType": "Report Type",
+        "groupByField": "Group By Field",
+        "displayFieldList": "Display Fields",
+        "filterDefinition": "Filter Definition",
+        "sortBy": "Sort By",
+        "sortDirection": "Sort Direction",
+        "maxSize": "Max Size",
+        "visualizationType": "Visualization Type",
+        "description": "Description",
+        "createdAt": "Created",
+        "modifiedAt": "Modified"
+    },
+    "options": {
+        "reportType": {
+            "List": "List",
+            "Count": "Count",
+            "GroupedCount": "Grouped Count"
+        },
+        "sortDirection": {
+            "asc": "Ascending",
+            "desc": "Descending"
+        },
+        "visualizationType": {
+            "Table": "Table",
+            "BarChart": "Bar Chart",
+            "PieChart": "Pie Chart",
+            "Metric": "Metric"
+        }
+    },
+    "tooltips": {
+        "filterDefinition": "Phase 1 supports simple filter rows with field, operator, and value.",
+        "displayFieldList": "Phase 1 list reports return these fields for each matching record."
+    }
+}

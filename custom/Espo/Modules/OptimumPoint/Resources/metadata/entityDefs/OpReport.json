@@ -1,0 +1,104 @@
+{
+    "fields": {
+        "name": {
+            "type": "varchar",
+            "required": true,
+            "pattern": "$noBadCharacters"
+        },
+        "isActive": {
+            "type": "bool",
+            "default": true
+        },
+        "targetEntityType": {
+            "type": "varchar",
+            "required": true,
+            "maxLength": 100
+        },
+        "reportType": {
+            "type": "enum",
+            "required": true,
+            "default": "List",
+            "options": [
+                "List",
+                "Count",
+                "GroupedCount"
+            ],
+            "displayAsLabel": true
+        },
+        "groupByField": {
+            "type": "varchar",
+            "maxLength": 100
+        },
+        "displayFieldList": {
+            "type": "jsonArray",
+            "default": []
+        },
+        "filterDefinition": {
+            "type": "jsonArray",
+            "default": []
+        },
+        "sortBy": {
+            "type": "varchar",
+            "maxLength": 100
+        },
+        "sortDirection": {
+            "type": "enum",
+            "default": "desc",
+            "options": [
+                "asc",
+                "desc"
+            ]
+        },
+        "maxSize": {
+            "type": "int",
+            "default": 50
+        },
+        "visualizationType": {
+            "type": "enum",
+            "default": "Table",
+            "options": [
+                "Table",
+                "BarChart",
+                "PieChart",
+                "Metric"
+            ]
+        },
+        "description": {
+            "type": "text"
+        },
+        "createdAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "modifiedAt": {
+            "type": "datetime",
+            "readOnly": true
+        },
+        "createdBy": {
+            "type": "link",
+            "readOnly": true
+        },
+        "modifiedBy": {
+            "type": "link",
+            "readOnly": true
+        }
+    },
+    "links": {
+        "createdBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        },
+        "modifiedBy": {
+            "type": "belongsTo",
+            "entity": "User"
+        }
+    },
+    "collection": {
+        "orderBy": "modifiedAt",
+        "order": "desc",
+        "textFilterFields": [
+            "name",
+            "targetEntityType"
+        ]
+    }
+}

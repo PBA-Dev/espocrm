@@ -267,6 +267,59 @@ Current behavior:
 - outbound webhook subscriptions for `OptimumPoint.BookingRequest.Created` are evaluated
 - current implementation returns matched rule/subscription lists; it does not yet perform real task creation, notification creation, or HTTP webhook sending
 
+### 10. Reports Foundation
+
+Added report entity:
+
+- `OpReport`
+
+Files include:
+
+- `Resources/metadata/scopes/OpReport.json`
+- `Resources/metadata/entityDefs/OpReport.json`
+- `Resources/metadata/clientDefs/OpReport.json`
+- `Resources/layouts/OpReport/*`
+- `Resources/i18n/en_US/OpReport.json`
+- `Controllers/OpReport.php`
+
+Added authenticated run endpoint:
+
+- route: `POST /api/v1/OptimumPoint/Report/:id/run`
+- action: `Api/PostRunReport.php`
+
+Updated report service:
+
+- `Services/Reporting/ReportRunner.php`
+
+Current report capabilities:
+
+- save report definitions as records
+- target any entity type
+- support report types:
+  - `List`
+  - `Count`
+  - `GroupedCount`
+- support simple Phase 1 filters with:
+  - `equals`
+  - `notEquals`
+  - `in`
+  - `notIn`
+  - `greaterThan`
+  - `lessThan`
+  - `greaterOrEquals`
+  - `lessOrEquals`
+- list reports return selected fields
+- count reports return a metric
+- grouped-count reports return grouped key/count rows
+
+Still not done for reports:
+
+- dashboard dashlet UI using report definitions
+- chart-specific frontend components
+- advanced filter builder UI
+- ACL-aware strict-access query path review
+- export/download endpoints
+
 ## Public Booking Form Decisions Already Confirmed
 
 These are important and should not be re-guessed in a new conversation.
@@ -324,6 +377,8 @@ Still missing or only stubbed:
 - actual report engine and report entities
 - actual workflow execution actions
 - actual HTTP webhook sending for OptimumPoint subscriptions
+- report dashboard/dashlet integration
+- advanced report UI and exports
 - UI for public booking page
 - admin polish for theme/login/navbar/dashboard
 - rebuild/runtime verification inside a running Espo instance
@@ -341,7 +396,7 @@ Progress against that list:
 
 - Meeting Scheduler: partial foundation + public backend endpoints
 - Workflow / Webhooks: foundation in place
-- Reports: not started
+- Reports: foundation in place
 - Google / Outlook integrations: not started
 
 ## Native Espo API Status

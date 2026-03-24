@@ -1,0 +1,63 @@
+[
+    {
+        "label": "",
+        "rows": [
+            [
+                {
+                    "name": "name"
+                },
+                {
+                    "name": "isActive"
+                }
+            ],
+            [
+                {
+                    "name": "targetEntityType"
+                },
+                {
+                    "name": "reportType"
+                }
+            ],
+            [
+                {
+                    "name": "groupByField"
+                },
+                {
+                    "name": "visualizationType"
+                }
+            ],
+            [
+                {
+                    "name": "sortBy"
+                },
+                {
+                    "name": "sortDirection"
+                }
+            ],
+            [
+                {
+                    "name": "maxSize"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "displayFieldList",
+                    "fullWidth": true
+                }
+            ],
+            [
+                {
+                    "name": "filterDefinition",
+                    "fullWidth": true
+                }
+            ],
+            [
+                {
+                    "name": "description",
+                    "fullWidth": true
+                }
+            ]
+        ]
+    }
+]

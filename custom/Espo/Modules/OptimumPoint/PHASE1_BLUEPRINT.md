@@ -37,7 +37,9 @@
 4. Reports foundation
    - saved report definition
    - report runner service
-   - dashboard presentation
+   - list, count, and grouped-count output
+   - run endpoint for authenticated users
+   - dashboard presentation comes after the base query model is stable
 
 5. Meeting scheduler
    - availability rules

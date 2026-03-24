@@ -10,5 +10,10 @@
         "method": "get",
         "actionClassName": "Espo\\Modules\\OptimumPoint\\Api\\GetServiceCatalog",
         "noAuth": true
+    },
+    {
+        "route": "/OptimumPoint/Report/:id/run",
+        "method": "post",
+        "actionClassName": "Espo\\Modules\\OptimumPoint\\Api\\PostRunReport"
     }
 ]
